@@ -5,8 +5,9 @@ module.exports = {
     port: 8081,
     proxy: {
       '/api': {
-        target: 'http//local-nextedu.com:8080',
-        changeOrigin: true
+        target: 'http://local-nextedu.com:8080',
+        changeOrigin: true,
+        logLevel: 'debug'
       }
     }
   },

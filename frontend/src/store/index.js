@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import * as modules from '@/store/modules';
+import courseStore from '@/store/modules/courseStore.js';
 
 Vue.use(Vuex);
 
-const store = new Vuex({
+const store = new Vuex.Store({
   modules: {
-    ...modules
+    courseStore
   }
 });
 
